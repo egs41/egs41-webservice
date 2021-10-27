@@ -1,3 +1,4 @@
-# Project exclude paths
-.gradle
-.idea
+# Default ignored files
+/shelf/
+/workspace.xml
+application-oauth.properties
