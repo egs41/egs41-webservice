@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.egs41.springboot.web.ProfileControllerUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-03T09:30:05" hostname="DESKTOP-7TF11RC" time="0.146">
+  <properties/>
+  <testcase name="active_profile이_없으면_default가_조회된다" classname="com.egs41.springboot.web.ProfileControllerUnitTest" time="0.146"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
