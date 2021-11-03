@@ -28,8 +28,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: AKIA6LB7AOAOGCY343UO # Travis repo settings에 설정된 값
-    secret_access_key: cASyeP8MqdVlIJBJ6RVPofgxKF91VcfA9i1gEvMi # Travis repo settings에 설정된 값
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
     bucket: egs41-springboot-build # S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
@@ -38,8 +38,8 @@ deploy:
     wait-until-deployed: true
 
   - provider: codedeploy
-    access_key_id: AKIA6LB7AOAOGCY343UO # Travis repo settings에 설정된 값
-    secret_access_key: cASyeP8MqdVlIJBJ6RVPofgxKF91VcfA9i1gEvMi # Travis repo settings에 설정된 값
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
     bucket: egs41-springboot-build # S3 버킷
     key: egs41-springboot-webservice.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip
